@@ -1,4 +1,4 @@
-angular.module('myApp',['ui.router'])
+angular.module('myApp',['ui.router','firebase'])
 		.config(function($stateProvider,$urlRouterProvider){
 			$urlRouterProvider.otherwise('/demo1');
 			$stateProvider
