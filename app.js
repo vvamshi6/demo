@@ -1,0 +1,15 @@
+angular.module('myApp',['ui.router'])
+		.config(function($stateProvider,$urlRouterProvider){
+			$urlRouterProvider.otherwise('/demo1');
+			$stateProvider
+			.state('demo',{
+				url:'/demo',
+				templateUrl:'template/demo.html',
+				controller:'demo_ctrl'
+			})
+			.state('demo1',{
+				url:'/demo1',
+				templateUrl:'template/demo1.html',
+				controller:'demo1_ctrl'
+			})
+		});
